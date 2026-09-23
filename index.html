@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SciCos 理科ラボ</title>
+<style>
+  :root{--bg:#07100c;--panel:#101a15;--line:#264436;--text:#e8fff2;--muted:#9ac5ad;--green:#54ff8a;--blue:#69b7ff}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif}
+  header{padding:1.2rem 1rem .4rem;max-width:1000px;margin:0 auto}
+  h1{margin:0;font-size:clamp(1.4rem,3.5vw,2rem)}
+  header p{color:var(--muted);margin:.4rem 0 0;line-height:1.6}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.9rem;padding:1rem;max-width:1000px;margin:0 auto}
+  .card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;color:var(--text);text-decoration:none}
+  .card:hover{border-color:var(--green)}
+  .card h2{margin:0 0 .3rem;font-size:1.25rem}
+  .card .sub{color:var(--green);font-size:.85rem;font-weight:700}
+  .card p{margin:.4rem 0 0;color:var(--muted);font-size:.95rem;line-height:1.55}
+  footer{padding:1rem;color:var(--muted);font-size:.85rem;text-align:center}
+  footer a{color:var(--blue)}
+</style>
+</head>
+<body>
+  <header>
+    <h1>SciCos 理科ラボ</h1>
+    <p>理科・物理の授業で使う無料のWebアプリ。インストール不要・登録不要・広告なし。PC／Chromebook／スマホのブラウザで開くだけ。</p>
+  </header>
+  <div class="cards">
+    <a class="card" href="https://torao-cos.github.io/nami-lab/"><div class="sub">高校 物理基礎「波」</div><h2>なみラボ</h2><p>波面と射線・単振動と正弦波・y-x/y-t グラフ・媒質の速度・縦波・地震波・重ね合わせ・反射・定在波・ホイヘンスの原理（屈折・回折・干渉）。画面クリックで停止、コマ送り、時間を戻せる。</p></a>
+    <a class="card" href="https://torao-cos.github.io/oto-lab/"><div class="sub">中学理科「音」／物理基礎「音」</div><h2>おとラボ</h2><p>マイクで音の波形をリアルタイム観察（トリガー付きオシロスコープ）。2音源で正弦波・矩形波などを鳴らし、うなりを耳と目で確かめる。</p></a>
+    <a class="card" href="https://kagaku-card.pages.dev/"><div class="sub">中学理科「化学」</div><h2>元素記号・化学式カード</h2><p>元素記号と化学式をカードでくり返し練習。スマホでスワイプ。</p></a>
+  </div>
+  <footer>© SciCos ／ 各アプリは MIT License で公開（<a href="https://github.com/Torao-cos">GitHub</a>）</footer>
+</body>
+</html>
